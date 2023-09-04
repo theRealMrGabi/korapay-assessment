@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Korapay assessment</title>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+
+	<body>
+		<nav class="nav">
+			<div class="nav-container">
+				<div class="test">
+					<div class="nav-buttons">
+						<button class="hamburger">
+							<img src="./assets/phone/Combined Shape.svg" alt="" />
+						</button>
+						<button class="back-arrow close-search">
+							<img src="./assets/phone/back.svg" alt="" />
+						</button>
+					</div>
+					<!-- logo -->
+					<div class="book-logo">
+						<div class="logo">
+							<img src="./assets/phone/white-library.svg" alt="" />
+						</div>
+						<div class="book-comp">
+							<h2>Korapay Book Club</h2>
+							<p>Admin</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- searchbar -->
+
+				<div class="nav-search-bar">
+					<input type="text" placeholder="Search" class="search-desktop" />
+					<button class="search-books-btn">
+						<img src="./assets/phone/search.svg" alt="" />
+					</button>
+					<button class="search-icon-only open-search">
+						<img src="./assets/phone/search.svg" alt="" />
+					</button>
+					<div class="searched-items">
+						<ul>
+							<li>
+								Built to Last- <span>Jim-collins, Jerry I. Poras...</span>
+							</li>
+							<li>Four Steps To- Epiph<span>any - James McEnroe </span></li>
+							<li>The Lean Startup- <span>Eric Reiss</span></li>
+							<li><span> No Excuses- Brian Tracy</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="nav-info">
+					<img src="./assets/phone/black-library.svg" alt="" />
+					<div class="notification">
+						<img src="./assets/phone/notification.svg" alt="" />
+						<p class="notification-number">3</p>
+					</div>
+					<img src="./assets/phone/Ellipse.svg" alt="" />
+				</div>
+			</div>
+		</nav>
+
+		<!--SIDEBAR  -->
+		<section class="sidebar">
+			<!-- Close button -->
+			<div class="sidebar-header">
+				<button class="close-sidebar back-arrow">
+					<img src="./assets/phone/back.svg" alt="" />
+				</button>
+				<!-- sidebar logo -->
+				<div class="book-logo">
+					<div class="logo">
+						<img src="./assets/phone/white-library.svg" alt="" />
+					</div>
+					<div class="sidebar-book-comp">
+						<h2 class="sidebar-title">Korapay Book Club</h2>
+						<p class="sidebar-user">Admin</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Sidebar Links -->
+			<div class="sidebar-links">
+				<ul>
+					<li><a class="sidebar-link" href="/">home</a></li>
+					<li><a class="sidebar-link" href="/">profile</a></li>
+					<li>
+						<a class="sidebar-link" href="/">notifications</a
+						><span class="unread">3</span>
+					</li>
+				</ul>
+
+				<ul>
+					<h2 class="sidebar-links-header">explore</h2>
+					<li><a class="sidebar-link" href="">books</a> <span>273</span></li>
+					<li><a class="sidebar-link" href="">genres</a> <span>42</span></li>
+					<li><a class="sidebar-link" href="">authors</a> <span>106</span></li>
+				</ul>
+
+				<ul>
+					<h2 class="sidebar-links-header">my books</h2>
+					<li><a class="sidebar-link" href="">queued</a> <span>3</span></li>
+					<li>
+						<a class="sidebar-link" href="">currently borrowed</a>
+						<span>0</span>
+					</li>
+					<li><a class="sidebar-link" href="">favorites</a> <span>19</span></li>
+					<li><a class="sidebar-link" href="">history</a></li>
+				</ul>
+
+				<ul>
+					<h2 class="sidebar-links-header">Admin</h2>
+					<li>
+						<a class="sidebar-link" href="">book request</a>
+						<span class="unread">2</span>
+					</li>
+					<li><a class="sidebar-link" href="">members</a> <span>34</span></li>
+					<li><a class="sidebar-link" href="">library settings</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<main>
+			<div class="header-title featured-title">
+				<p>featured books</p>
+			</div>
+			<!-- Carousel -->
+			<div class="carousel" data-flickity='{"groupCells": true}'>
+				<div class="carousel-cell">
+					<img src="./assets/mobile-carousel/big magic (1).svg" alt="" />
+					<button class="carousel-show-details">
+						<img
+							src="./assets/carsousel-icons/details-toggle.svg"
+							alt=""
+							class=".show-details-btn"
+						/>
+					</button>
+
+					<div class="carousel-book-underlay">
+						<div>
+							<button class="close-overlay">&times;</button>
+						</div>
+
+						<h4 class="book-status available">Available</h4>
+						<h3 class="book-title">Big Magic</h3>
+						<p class="book-author">Elizabeth Gilbert-2014</p>
+						<p class="book-genre">Motivational</p>
+
+						<div class="book-ratings">
+							<div class="rating c-rating">
+								<p>Ratings: 4.0</p>
+								<div class="c-stars">
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/non-colored-star.svg" alt="" />
+								</div>
+							</div>
+							<div class="c-rating-likes">
+								<div class="views">
+									<img src="./assets/carsousel-icons/people.svg" alt="" />
+									<p>31</p>
+								</div>
+								<div class="likes">
+									<img
+										src="./assets/carsousel-icons/likes.svg"
+										alt="love icon"
+									/>
+									<p>29</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-cell">
+					<img src="./assets/mobile-carousel/effective python (1).svg" alt="" />
+					<button class="carousel-show-details">
+						<img
+							src="./assets/carsousel-icons/details-toggle.svg"
+							alt=""
+							class=".show-details-btn"
+						/>
+					</button>
+
+					<div class="carousel-book-underlay">
+						<div>
+							<button class="close-overlay">&times;</button>
+						</div>
+
+						<h4 class="book-status available">Available</h4>
+						<h3 class="book-title">Effective python</h3>
+						<p class="book-author">Diomidis Spinellis</p>
+						<p class="book-genre">Motivational</p>
+
+						<div class="book-ratings">
+							<div class="rating c-rating">
+								<p>Ratings: 4.0</p>
+								<div class="c-stars">
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/non-colored-star.svg" alt="" />
+								</div>
+							</div>
+							<div class="c-rating-likes">
+								<div class="views">
+									<img src="./assets/carsousel-icons/people.svg" alt="" />
+									<p>31</p>
+								</div>
+								<div class="likes">
+									<img
+										src="./assets/carsousel-icons/likes.svg"
+										alt="love icon"
+									/>
+									<p>29</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-cell">
+					<img src="./assets/mobile-books/built-to-last-1.svg" alt="" />
+					<button class="carousel-show-details">
+						<img
+							src="./assets/carsousel-icons/details-toggle.svg"
+							alt=""
+							class=".show-details-btn"
+						/>
+					</button>
+
+					<div class="carousel-book-underlay">
+						<div>
+							<button class="close-overlay">&times;</button>
+						</div>
+
+						<h4 class="book-status borrowed-out">borrowed out</h4>
+						<h3 class="book-title">Built to last</h3>
+						<p class="book-author">Jim-collins, Jerry I.poras</p>
+						<p class="book-genre">Motivational</p>
+
+						<div class="book-ratings">
+							<div class="rating c-rating">
+								<p>Ratings: 4.0</p>
+								<div class="c-stars">
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/non-colored-star.svg" alt="" />
+								</div>
+							</div>
+							<div class="c-rating-likes">
+								<div class="views">
+									<img src="./assets/carsousel-icons/people.svg" alt="" />
+									<p>31</p>
+								</div>
+								<div class="likes">
+									<img
+										src="./assets/carsousel-icons/likes.svg"
+										alt="love icon"
+									/>
+									<p>29</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-cell">
+					<img src="./assets/mobile-carousel/effective engineer.svg" alt="" />
+					<button class="carousel-show-details">
+						<img
+							src="./assets/carsousel-icons/details-toggle.svg"
+							alt=""
+							class=".show-details-btn"
+						/>
+					</button>
+
+					<div class="carousel-book-underlay">
+						<div>
+							<button class="close-overlay">&times;</button>
+						</div>
+
+						<h4 class="book-status available">Available</h4>
+						<h3 class="book-title">Effective Engineer</h3>
+						<p class="book-author">Edmound Lau</p>
+						<p class="book-genre">Motivational</p>
+
+						<div class="book-ratings">
+							<div class="rating c-rating">
+								<p>Ratings: 4.0</p>
+								<div class="c-stars">
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/non-colored-star.svg" alt="" />
+								</div>
+							</div>
+							<div class="c-rating-likes">
+								<div class="views">
+									<img src="./assets/carsousel-icons/people.svg" alt="" />
+									<p>31</p>
+								</div>
+								<div class="likes">
+									<img
+										src="./assets/carsousel-icons/likes.svg"
+										alt="love icon"
+									/>
+									<p>29</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-cell">
+					<img src="./assets/mobile-carousel/effective python (1).svg" alt="" />
+					<button class="carousel-show-details">
+						<img
+							src="./assets/carsousel-icons/details-toggle.svg"
+							alt=""
+							class=".show-details-btn"
+						/>
+					</button>
+
+					<div class="carousel-book-underlay">
+						<div>
+							<button class="close-overlay">&times;</button>
+						</div>
+
+						<h4 class="book-status available">Available</h4>
+						<h3 class="book-title">Effective python</h3>
+						<p class="book-author">Diomidis Spinellis</p>
+						<p class="book-genre">Motivational</p>
+
+						<div class="book-ratings">
+							<div class="rating c-rating">
+								<p>Ratings: 4.0</p>
+								<div class="c-stars">
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/non-colored-star.svg" alt="" />
+								</div>
+							</div>
+							<div class="c-rating-likes">
+								<div class="views">
+									<img src="./assets/carsousel-icons/people.svg" alt="" />
+									<p>31</p>
+								</div>
+								<div class="likes">
+									<img
+										src="./assets/carsousel-icons/likes.svg"
+										alt="love icon"
+									/>
+									<p>29</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-cell">
+					<img src="./assets/mobile-books/built-to-last-1.svg" alt="" />
+					<button class="carousel-show-details">
+						<img
+							src="./assets/carsousel-icons/details-toggle.svg"
+							alt=""
+							class=".show-details-btn"
+						/>
+					</button>
+
+					<div class="carousel-book-underlay">
+						<div>
+							<button class="close-overlay">&times;</button>
+						</div>
+
+						<h4 class="book-status borrowed-out">borrowed out</h4>
+						<h3 class="book-title">Built to last</h3>
+						<p class="book-author">Jim-collins, Jerry I.poras</p>
+						<p class="book-genre">Motivational</p>
+
+						<div class="book-ratings">
+							<div class="rating c-rating">
+								<p>Ratings: 4.0</p>
+								<div class="c-stars">
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/non-colored-star.svg" alt="" />
+								</div>
+							</div>
+							<div class="c-rating-likes">
+								<div class="views">
+									<img src="./assets/carsousel-icons/people.svg" alt="" />
+									<p>31</p>
+								</div>
+								<div class="likes">
+									<img
+										src="./assets/carsousel-icons/likes.svg"
+										alt="love icon"
+									/>
+									<p>29</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-cell">
+					<img src="./assets/mobile-carousel/effective engineer.svg" alt="" />
+					<button class="carousel-show-details">
+						<img
+							src="./assets/carsousel-icons/details-toggle.svg"
+							alt=""
+							class=".show-details-btn"
+						/>
+					</button>
+
+					<div class="carousel-book-underlay">
+						<div>
+							<button class="close-overlay">&times;</button>
+						</div>
+
+						<h4 class="book-status available">Available</h4>
+						<h3 class="book-title">Effective Engineer</h3>
+						<p class="book-author">Edmound Lau</p>
+						<p class="book-genre">Motivational</p>
+
+						<div class="book-ratings">
+							<div class="rating c-rating">
+								<p class="main-rating">Ratings: 4.0</p>
+								<div class="c-stars">
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/non-colored-star.svg" alt="" />
+								</div>
+							</div>
+							<div class="c-rating-likes">
+								<div class="views">
+									<img src="./assets/carsousel-icons/people.svg" alt="" />
+									<p>31</p>
+								</div>
+								<div class="likes">
+									<img
+										src="./assets/carsousel-icons/likes.svg"
+										alt="love icon"
+									/>
+									<p>29</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-cell">
+					<img src="./assets/mobile-books/built-to-last-1.svg" alt="" />
+					<button class="carousel-show-details">
+						<img
+							src="./assets/carsousel-icons/details-toggle.svg"
+							alt=""
+							class=".show-details-btn"
+						/>
+					</button>
+
+					<div class="carousel-book-underlay">
+						<div>
+							<button class="close-overlay">&times;</button>
+						</div>
+
+						<h4 class="book-status borrowed-out">borrowed out</h4>
+						<h3 class="book-title">Built to last</h3>
+						<p class="book-author">Jim-collins, Jerry I.poras</p>
+						<p class="book-genre">Motivational</p>
+
+						<div class="book-ratings">
+							<div class="rating c-rating">
+								<p>Ratings: 4.0</p>
+								<div class="c-stars">
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/non-colored-star.svg" alt="" />
+								</div>
+							</div>
+							<div class="c-rating-likes">
+								<div class="views">
+									<img src="./assets/carsousel-icons/people.svg" alt="" />
+									<p>31</p>
+								</div>
+								<div class="likes">
+									<img
+										src="./assets/carsousel-icons/likes.svg"
+										alt="love icon"
+									/>
+									<p>29</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-cell">
+					<img src="./assets/mobile-carousel/effective engineer.svg" alt="" />
+					<button class="carousel-show-details">
+						<img
+							src="./assets/carsousel-icons/details-toggle.svg"
+							alt=""
+							class=".show-details-btn"
+						/>
+					</button>
+
+					<div class="carousel-book-underlay">
+						<div>
+							<button class="close-overlay">&times;</button>
+						</div>
+
+						<h4 class="book-status available">Available</h4>
+						<h3 class="book-title">Effective Engineer</h3>
+						<p class="book-author">Edmound Lau</p>
+						<p class="book-genre">Motivational</p>
+
+						<div class="book-ratings">
+							<div class="rating c-rating">
+								<p>Ratings: 4.0</p>
+								<div class="c-stars">
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/colored-star.svg" alt="" />
+									<img src="./assets/phone/non-colored-star.svg" alt="" />
+								</div>
+							</div>
+							<div class="c-rating-likes">
+								<div class="views">
+									<img src="./assets/carsousel-icons/people.svg" alt="" />
+									<p>31</p>
+								</div>
+								<div class="likes">
+									<img
+										src="./assets/carsousel-icons/likes.svg"
+										alt="love icon"
+									/>
+									<p>29</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Recently Added -->
+			<section class="section">
+				<div class="header-title">
+					<p>recently added</p>
+				</div>
+				<div class="section-container"></div>
+			</section>
+
+			<!-- All Books -->
+			<section class="section">
+				<div class="header-title">
+					<p>all books</p>
+				</div>
+				<div class="section-container"></div>
+			</section>
+		</main>
+
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+		<script src="./script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,16 @@
+{
+	"name": "korapay-assessment",
+	"version": "0.0.1",
+	"description": "",
+	"main": "index.html",
+	"scripts": {
+		"start": "lite-server"
+	},
+	"keywords": [],
+	"author": "Adegabi Ibrahim",
+	"license": "ISC",
+	"dependencies": {
+		"flickity": "^3.0.0",
+		"lite-server": "^2.6.1"
+	}
+}
